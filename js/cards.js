@@ -158,9 +158,9 @@ eagle.onPluginCreate((plugin) => {
 		let tagname = game.tags.map(tag => i18next.t('app.tag.' + tag)).join(' ');
 	
 		if (game.folder === 1) {
-			card.href = `${game.name}/index.html`;
+			card.href = `games/${game.name}/index.html`;
 		} else {
-			card.href = game.name + ".html";
+			card.href = `games/${game.name}.html`;
 		}
 		card.innerHTML = `
 			<div class="card">
