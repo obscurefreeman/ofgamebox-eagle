@@ -31,10 +31,12 @@ eagle.onPluginCreate(async (plugin) => {
 	console.log('path:', plugin.path);
 
 	// update app name on header
-	document.getElementById('appName').innerHTML = i18next.t('manifest.app.name')
-	document.getElementById('heading').innerHTML = i18next.t('app.title');
+
+	// document.getElementById('appName').innerHTML = i18next.t('manifest.app.name')
+	
 	
 	// 卧槽为什么这段代码放在card.js里就可以，放在这里就不行？
+	// document.getElementById('heading').innerHTML = i18next.t('app.title');
 	// document.getElementById('contentA').innerHTML = i18next.t('app.contentA');
 	// document.getElementById('contentB').innerHTML = i18next.t('app.contentB');
 	// document.getElementById('contentC').innerHTML = i18next.t('app.contentC');
@@ -60,9 +62,9 @@ eagle.onPluginCreate(async (plugin) => {
 		});
 	});
 
-	document.querySelector('.btn-close').addEventListener('click', () => {
-		window.close();
-	});
+	// document.querySelector('.btn-close').addEventListener('click', () => {
+	// 	window.close();
+	// });
 });
 
 eagle.onThemeChanged(() => {

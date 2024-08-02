@@ -72,6 +72,7 @@ eagle.onPluginCreate((plugin) => {
 		{ name: "picohot",  title: "Pico Hot", folder: 1, description: "2222222222222", rating: 4.9, tags: ["fps", "battle"] },
 		{ name: "radiusraid",  title: "Radius Raid", folder: 1, description: "2222222222222", rating: 4.7, tags: ["action", "battle"] },
 		{ name: "the-caretakera",  title: "The Caretakera", folder: 1, description: "2222222222222", rating: 4.5, tags: ["horror", "puzzle"] },
+		{ name: "poom",  title: "Poom", folder: 1, description: "2222222222222", rating: 4.8, tags: ["action", "fps"] },
 		{ name: "thecube",  title: "The Cube", folder: 1, description: "2222222222222", rating: 4, tags: ["puzzle", "leisure"] },
 		{ name: "tilting-maze-game",  title: "Tilting Maze Game", folder: 1, description: "2222222222222", rating: 4, tags: ["leisure", "puzzle"] },
 		{ name: "valorousrabbit",  title: "Valorous Rabbit", folder: 1, description: "2222222222222", rating: 3, tags: ["adventure", "racing"] },
@@ -210,12 +211,10 @@ eagle.onPluginCreate((plugin) => {
 
 
 	
-
+	document.getElementById('heading').innerHTML = i18next.t('app.title');
 	document.getElementById('contentA').innerHTML = i18next.t('app.contentA');
 	document.getElementById('contentB').innerHTML = i18next.t('app.contentB');
 	document.getElementById('contentC').innerHTML = i18next.t('app.contentC');
-
-
 
 
 
