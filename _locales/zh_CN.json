@@ -1,0 +1,43 @@
+{
+	"manifest": {
+		"app": {
+			"name": "弗里曼的游戏盒"
+		}
+	},
+	"app": {
+		"title": "弗里曼的游戏盒",
+		"contentA": "欢迎来到我的游戏盒，这里有一些我搜集的开源小游戏，这是你打发时间的好去处。",
+		"contentB": "如果你有兴趣添加新游戏或改进我的代码，请前往该项目的Github主页。",
+		"contentC": "另外，你可以通过鼠标中键点击游戏在新窗口中打开，然后按下F11全屏。",
+		"tags": "标签",
+		"tag": {
+			"puzzle": "解密",
+			"fps": "FPS",
+			"shooter": "射击",
+			"rpg": "角色扮演",
+			"simulation": "模拟",
+			"strategy": "策略",
+			"sports": "体育",
+			"adventure": "冒险",
+			"racing": "竞速",
+			"platformer": "平台",
+			"stealth": "潜行",
+			"survival": "生存",
+			"horror": "恐怖",
+			"action": "动作",
+			"mmo": "多人在线",
+			"party": "派对",
+			"battle": "战斗",
+			"rhythm": "节奏",
+			"visual_novel": "视觉小说",
+			"anime": "动漫",
+			"fantasy": "奇幻",
+			"scifi": "科幻",
+			"leisure":"休闲",
+			"mystery": "悬疑",
+			"martial_arts": "武术",
+			"historical": "历史",
+			"military": "军事"
+		}
+	}
+}

@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>
+        vditor编辑器
+    </title>
+    <link rel="stylesheet" href="https://unpkg.com/vditor/dist/index.css"
+    />
+    <script src="https://unpkg.com/vditor/dist/index.min.js">
+    </script>
+  </head>
+
+  <body>
+    <div id="content">
+    </div>
+    <script>
+      var vditor = null;
+      window.onload = function() {
+          vditor = new Vditor(document.getElementById('content'), {
+              "height":"100%",
+              "cache":{
+              "enable":false
+              },
+              "value":"## 欢迎使用Veditor。\nVeditor是思源笔记开发者制作的网页端的 Markdown 编辑器，支持所见即所得。",
+              "mode":"wysiwyg"
+          });
+      }
+
+    </script>
+  </body>
+</html>

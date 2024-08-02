@@ -1,0 +1,43 @@
+{
+	"manifest": {
+		"app": {
+			"name": "Freeman's Gamebox"
+		}
+	},
+	"app": {
+		"title": "Freeman's Gamebox",
+		"contentA": "Welcome to my gamebox, here are some of my collection of open source mini-games, this is a good place to pass the time." ,
+		"contentB": "If you're interested in adding a new game or improving my code, head over to the project's Github homepage." ,
+		"contentC": "Alternatively, you can middle-click on the game to open in a new window and press F11 to full screen." ,
+		"tags": "Tags",
+			"tag": {
+				"puzzle": "Puzzle",
+				"fps": "FPS",
+				"shooter": "Shooting",
+				"rpg": "RPG",
+				"simulation": "Simulation",
+				"strategy": "Strategy",
+				"sports": "Sports",
+				"adventure": "Adventure",
+				"racing": "Racing",
+				"platformer": "Platform",
+				"stealth": "Stealth",
+				"survival": "Survival",
+				"horror": "Horror",
+				"action": "Action",
+				"mmo": "Multiplayer Online",
+				"party": "Party",
+				"battle": "Battle",
+				"rhythm": "Rhythm",
+				"visual_novel": "Visual Novel",
+				"anime": "Anime",
+				"fantasy": "Fantasy",
+				"scifi": "Science Fiction",
+				"leisure":"Leisure",
+				"mystery": "Mystery",
+				"martial_arts": "Martial Arts",
+				"historical": "Historical",
+				"military": "Military"
+			}
+	}
+}
