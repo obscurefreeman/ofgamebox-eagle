@@ -1,14 +1,15 @@
 {
 	"manifest": {
 		"app": {
-			"name": "Freeman's Gamebox"
+			"name": "Open Gamebox"
 		}
 	},
 	"app": {
-		"title": "The Cake is a Lie",
+		"title": "Play mini-games in Eagle!",
 		"contentA": "Check out all these mini-games! They're from my regular collection of open-source code sites." ,
 		"contentB": "You can view them in full screen by middle-clicking the game, opening it in a new window, and pressing F11." ,
 		"contentC": "Looking for additional features, a prettier interface, and a wider selection of mini-games? Visit the Github page!" ,
+		"contentD": "Feeling tired? Play some open source games! " ,
 		"tags": "Tags",
 			"tag": {
 				"puzzle": "Puzzle",

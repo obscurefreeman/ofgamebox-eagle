@@ -221,9 +221,10 @@ eagle.onPluginCreate((plugin) => {
 
 	
 	document.getElementById('heading').innerHTML = i18next.t('app.title');
-	document.getElementById('contentA').innerHTML = i18next.t('app.contentA');
+	// document.getElementById('contentA').innerHTML = i18next.t('app.contentA');
 	document.getElementById('contentB').innerHTML = i18next.t('app.contentB');
-	document.getElementById('contentC').innerHTML = i18next.t('app.contentC');
+	// document.getElementById('contentC').innerHTML = i18next.t('app.contentC');
+	document.getElementById('contentD').innerHTML = i18next.t('app.contentD');
 
 
 
