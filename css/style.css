@@ -6,20 +6,20 @@
 	font-weight: 400;
 }
 
-body {
+html {
 	font-family: Arial, sans-serif;
 	transition: background-color 0.5s, color 0.5s;
 }
 
 @media (prefers-color-scheme: dark) {
-	body {
+	html {
 		background-color: #1c2127;
 		color: #ffffff;
 	}
 }
 
 @media (prefers-color-scheme: light) {
-	body {
+	html {
 		background-color: #ffffff;
 		color: #000000;
 	}
