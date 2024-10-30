@@ -6,8 +6,23 @@
 	font-weight: 400;
 }
 
-html {
-	background-color: #f4f4f4;
+body {
+	font-family: Arial, sans-serif;
+	transition: background-color 0.5s, color 0.5s;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #1c2127;
+		color: #ffffff;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	body {
+		background-color: #ffffff;
+		color: #000000;
+	}
 }
 
 header {

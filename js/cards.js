@@ -1,7 +1,103 @@
+const userLang = navigator.language || navigator.userLanguage; // 获取用户的语言偏好
+const lang = userLang.split('-')[0]; // 提取语言代码，例如'en'或'zh'
+
+// 支持的语言列表
+const supportedLangs = ['en', 'zh'];
+
+// 如果用户语言不在支持的语言列表中，则设置为默认的英文
+if (!supportedLangs.includes(lang)) {
+  lang = 'en';
+}
+i18next.init({
+	lng: lang,
+		resources: {
+			en: {
+				translation:{
+					"app": {
+						"title": "Play mini-games in Eagle!",
+						"contentA": "Check out all these mini-games! They're from my regular collection of open-source code sites." ,
+						"contentB": "You can view them in full screen by middle-clicking the game, opening it in a new window, and pressing F11." ,
+						"contentC": "Looking for additional features, a prettier interface, and a wider selection of mini-games? Visit the Github page!" ,
+						"contentD": "Feeling tired? Play some open source games! " ,
+						"tags": "Tags",
+							"tag": {
+								"puzzle": "Puzzle",
+								"fps": "FPS",
+								"shooter": "Shooter",
+								"rpg": "RPG",
+								"simulation": "Simulation",
+								"strategy": "Strategy",
+								"sports": "Sports",
+								"adventure": "Adventure",
+								"racing": "Racing",
+								"platformer": "Platform",
+								"stealth": "Stealth",
+								"survival": "Survival",
+								"horror": "Horror",
+								"action": "Action",
+								"mmo": "MMO",
+								"party": "Party",
+								"battle": "Battle",
+								"rhythm": "Rhythm",
+								"visual_novel": "Visual Novel",
+								"anime": "Anime",
+								"fantasy": "Fantasy",
+								"scifi": "Sci-fi",
+								"leisure":"Leisure",
+								"mystery": "Mystery",
+								"martial": "Martial",
+								"historical": "Historical",
+								"military": "Military"
+							}
+					}
+				}
+			},
+			zh: {
+				translation:{
+					"app": {
+						"title": "在 Eagle 中畅玩小游戏！",
+						"contentA": "看，这里有很多小游戏！它们是我平常在开源代码网站上收集的。",
+						"contentB": "使用通过鼠标中键点击游戏，在新窗口中打开，然后按下F11键全屏体验。",
+						"contentC": "想要更多功能，更漂亮的界面，和更多小游戏？来 Github 贡献代码吧！",
+						"contentD": "感觉累了吗？来玩一些免费的开源游戏吧！",
+						"tags": "标签",
+						"tag": {
+							"puzzle": "解密",
+							"fps": "FPS",
+							"shooter": "射击",
+							"rpg": "角色扮演",
+							"simulation": "模拟",
+							"strategy": "策略",
+							"sports": "体育",
+							"adventure": "冒险",
+							"racing": "竞速",
+							"platformer": "平台",
+							"stealth": "潜行",
+							"survival": "生存",
+							"horror": "恐怖",
+							"action": "动作",
+							"mmo": "多人在线",
+							"party": "派对",
+							"battle": "战斗",
+							"rhythm": "节奏",
+							"visual_novel": "视觉小说",
+							"anime": "动漫",
+							"fantasy": "奇幻",
+							"scifi": "科幻",
+							"leisure":"休闲",
+							"mystery": "悬疑",
+							"martial": "武术",
+							"historical": "历史",
+							"military": "军事"
+						}
+					}
+				}
+			}
+		}
+	}, function(err, t) {
+		if (err) return console.error(err);
 
 
-
-eagle.onPluginCreate((plugin) => {
 	const games = [
 		{ name: "2048",  title: "2048", folder: 1, description: "2222222222222", rating: 4.5, tags: ["puzzle", "strategy"] },
 		{ name: "back-attacker",  title: "Back Attacker", folder: 1, description: "2222222222222", rating: 4.5, tags: ["martial", "stealth"] },
@@ -47,9 +143,9 @@ eagle.onPluginCreate((plugin) => {
 	games.sort((a, b) => b.rating - a.rating);
 	games.forEach(game => {
 		const card = document.createElement("a");
-	
+
 		let tagname = game.tags.map(tag => i18next.t('app.tag.' + tag)).join(' ');
-	
+
 		if (game.folder === 1) {
 			card.href = `games/${game.name}/index.html`;
 		} else {
@@ -70,15 +166,11 @@ eagle.onPluginCreate((plugin) => {
 		`;
 		gameCardsContainer.appendChild(card);
 	});
-	
+
 
 	document.getElementById('heading').innerHTML = i18next.t('app.title');
 	// document.getElementById('contentA').innerHTML = i18next.t('app.contentA');
 	document.getElementById('contentB').innerHTML = i18next.t('app.contentB');
 	// document.getElementById('contentC').innerHTML = i18next.t('app.contentC');
 	document.getElementById('contentD').innerHTML = i18next.t('app.contentD');
-
-
-
-
 });
