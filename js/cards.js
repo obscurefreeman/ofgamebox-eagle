@@ -14,11 +14,12 @@ i18next.init({
 			en: {
 				translation:{
 					"app": {
-						"title": "Play mini-games in Eagle!",
+						"title": "Freeman's Minigame Collection",
 						"contentA": "Check out all these mini-games! They're from my regular collection of open-source code sites." ,
 						"contentB": "You can view them in full screen by middle-clicking the game, opening it in a new window, and pressing F11." ,
 						"contentC": "Looking for additional features, a prettier interface, and a wider selection of mini-games? Visit the Github page!" ,
-						"contentD": "Feeling tired? Play some open source games! " ,
+						"contentD": "Feeling tired? It's mini-game time!" ,
+						"contentE": "All games are collected from Github, Codepen and js13kGames, thanks to these open source projects!",
 						"tags": "Tags",
 							"tag": {
 								"puzzle": "Puzzle",
@@ -55,11 +56,12 @@ i18next.init({
 			zh: {
 				translation:{
 					"app": {
-						"title": "在 Eagle 中畅玩小游戏！",
+						"title": "弗里曼迷你游戏集",
 						"contentA": "看，这里有很多小游戏！它们是我平常在开源代码网站上收集的。",
 						"contentB": "使用通过鼠标中键点击游戏，在新窗口中打开，然后按下F11键全屏体验。",
 						"contentC": "想要更多功能，更漂亮的界面，和更多小游戏？来 Github 贡献代码吧！",
-						"contentD": "感觉累了吗？来玩一些免费的开源游戏吧！",
+						"contentD": "感觉累了吗？来玩些小游戏吧！",
+						"contentE": "所有游戏均搜集于 Github，Codepen 和 js13kGames ，感谢这些开源项目！",
 						"tags": "标签",
 						"tag": {
 							"puzzle": "解密",
@@ -170,7 +172,8 @@ i18next.init({
 
 	document.getElementById('heading').innerHTML = i18next.t('app.title');
 	// document.getElementById('contentA').innerHTML = i18next.t('app.contentA');
-	document.getElementById('contentB').innerHTML = i18next.t('app.contentB');
+	// document.getElementById('contentB').innerHTML = i18next.t('app.contentB');
 	// document.getElementById('contentC').innerHTML = i18next.t('app.contentC');
 	document.getElementById('contentD').innerHTML = i18next.t('app.contentD');
+	document.getElementById('contentE').innerHTML = i18next.t('app.contentE');
 });
